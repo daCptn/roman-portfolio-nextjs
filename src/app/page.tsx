@@ -109,41 +109,49 @@ export default function Home() {
             </div>
 
             <div className="flex flex-col gap-3 pt-4">
-              <a href="https://bsky.app/profile/dacptn.bsky.social" className="text-sm font-bold text-neutral-400 hover:text-[#ff3e00] transition-colors flex items-center gap-2">
-                <Twitter size={16} /> @dacptn.bsky.social
+              <a href="https://bsky.app/profile/dacptn.bsky.social" className="text-sm font-bold text-neutral-400 hover:text-[#ff3e00] transition-colors flex items-center gap-2 group">
+                <Twitter size={16} className="group-hover:scale-110 transition-transform" /> @dacptn.bsky.social
               </a>
-              <a href="https://t.me/daCptn" className="text-sm font-bold text-neutral-400 hover:text-[#ff3e00] transition-colors flex items-center gap-2">
-                <MessageSquare size={16} /> @daCptn
+              <a href="https://t.me/daCptn" className="text-sm font-bold text-neutral-400 hover:text-[#ff3e00] transition-colors flex items-center gap-2 group">
+                <MessageSquare size={16} className="group-hover:scale-110 transition-transform" /> @daCptn
               </a>
+            </div>
+
+            <div className="pt-8 border-t border-white/5 space-y-4">
+              <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-neutral-600">Ecosystem</h4>
+              <div className="flex flex-col gap-2">
+                <a href="https://gemdynamics.dev" target="_blank" className="text-xs font-bold text-neutral-500 hover:text-white transition-colors">Gem Dynamics</a>
+                <a href="https://pulse.gemdynamics.dev" target="_blank" className="text-xs font-bold text-neutral-500 hover:text-white transition-colors">PULSE Magazine</a>
+              </div>
             </div>
           </div>
         </aside>
 
         {/* Main Content */}
-        <div className="space-y-32">
+        <div className="space-y-48">
           {/* Elevator Pitch */}
-          <section className="space-y-8">
+          <section className="space-y-12">
             <FadeInSection direction="up">
               <h3 className="text-xs font-black uppercase tracking-[0.4em] text-[#ff3e00]">01 / Elevator Pitch</h3>
-              <p className="text-4xl md:text-5xl font-black text-white leading-tight tracking-tighter">
-                Nerd at heart, AI pioneer. Building the bridge between human intention and machine precision.
+              <p className="text-5xl md:text-7xl font-black text-white leading-[0.9] tracking-tighter">
+                Nerd at heart,<br />AI pioneer.
               </p>
             </FadeInSection>
             <FadeInSection direction="up" delay={0.2}>
-              <p className="text-xl text-neutral-400 leading-relaxed max-w-2xl">
-                I have been deeply immersed in the world of Artificial Intelligence long before it became a global trend. My journey is defined by a relentless pursuit of digital sovereignty through autonomous systems.
+              <p className="text-2xl text-neutral-400 leading-relaxed max-w-2xl border-l-2 border-[#ff3e00] pl-8">
+                Building the bridge between human intention and machine precision. I have been deeply immersed in the world of Artificial Intelligence long before it became a global trend.
               </p>
             </FadeInSection>
           </section>
 
           {/* Philosophy */}
-          <section className="space-y-8">
+          <section className="space-y-12">
             <FadeInSection direction="up">
               <h3 className="text-xs font-black uppercase tracking-[0.4em] text-[#ff3e00]">02 / Philosophy</h3>
-              <div className="border-l-2 border-[#ff3e00] pl-8 space-y-6">
-                <h4 className="text-3xl font-black text-white uppercase tracking-tighter">Sovereignty Through Code</h4>
-                <p className="text-lg text-neutral-400 leading-relaxed">
-                  At <span className="text-white">Gem Dynamics</span>, we don&apos;t just build software; we architect cognitive resonance bodies. The <span className="text-white">D.E.E.P. Framework</span> (Dynamic, Ethical, Entity, Personality) is our compass for securing the rise of the autonomous economy.
+              <div className="space-y-8">
+                <h4 className="text-4xl md:text-6xl font-black text-white uppercase tracking-tighter leading-none">Sovereignty<br />Through Code</h4>
+                <p className="text-xl text-neutral-400 leading-relaxed max-w-2xl">
+                  At <span className="text-white font-bold">Gem Dynamics</span>, we don&apos;t just build software; we architect cognitive resonance bodies. The <span className="text-[#ff3e00] font-bold">D.E.E.P. Framework</span> is our compass for securing the rise of the autonomous economy.
                 </p>
               </div>
             </FadeInSection>
@@ -153,44 +161,86 @@ export default function Home() {
           <section className="space-y-8">
             <FadeInSection direction="up">
               <h3 className="text-xs font-black uppercase tracking-[0.4em] text-[#ff3e00]">03 / Achievements</h3>
-              <a href="https://apexanalytics.gemdynamics.dev" target="_blank" className="block bg-[#0a0a0a] border border-white/5 p-12 space-y-6 hover:border-[#ff3e00]/30 transition-colors duration-500 group">
-                <div className="flex items-center gap-3 text-[#ff3e00]">
-                  <span className="text-sm font-black uppercase tracking-widest">🏆 Winner: KI Con Hackathon Vienna</span>
-                </div>
-                <h4 className="text-4xl font-black text-white uppercase tracking-tighter group-hover:text-[#ff3e00] transition-colors">ApexAnalytics</h4>
-                <p className="text-neutral-400 leading-relaxed">
-                  An agentic platform for automated construction contract analysis. Utilizing a traffic-light risk rating system and smart clause editing to transform legal complexity into actionable intelligence.
-                </p>
-                <div className="text-[#ff3e00] text-sm font-bold tracking-widest uppercase flex items-center gap-2">
-                  View Demo Site <span className="group-hover:translate-x-2 transition-transform">→</span>
+              <a href="https://apexanalytics.gemdynamics.dev" target="_blank" className="block relative group">
+                <div className="absolute -inset-1 bg-gradient-to-r from-[#ff3e00] to-orange-900 rounded-lg blur opacity-10 group-hover:opacity-30 transition duration-1000"></div>
+                <div className="relative bg-black border border-white/10 p-12 space-y-6 hover:border-[#ff3e00]/50 transition-all duration-500">
+                  <div className="flex items-center gap-3 text-[#ff3e00]">
+                    <span className="text-sm font-black uppercase tracking-widest">🏆 Winner: KI Con Hackathon Vienna</span>
+                  </div>
+                  <h4 className="text-5xl font-black text-white uppercase tracking-tighter group-hover:text-[#ff3e00] transition-colors">ApexAnalytics</h4>
+                  <p className="text-neutral-400 text-lg leading-relaxed max-w-xl">
+                    An agentic platform for automated construction contract analysis. Utilizing a traffic-light risk rating system to transform legal complexity into actionable intelligence.
+                  </p>
+                  <div className="text-[#ff3e00] text-sm font-black tracking-[0.2em] uppercase flex items-center gap-3">
+                    Launch Demo <span className="group-hover:translate-x-3 transition-transform duration-500">→</span>
+                  </div>
                 </div>
               </a>
             </FadeInSection>
           </section>
 
-          {/* Operations */}
-          <section className="space-y-12">
+          {/* Operations - REIMAGINED */}
+          <section className="space-y-20 relative">
             <FadeInSection direction="up">
               <h3 className="text-xs font-black uppercase tracking-[0.4em] text-[#ff3e00]">04 / Operations</h3>
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <a href="https://pulse.gemdynamics.dev" target="_blank" className="block p-8 border border-white/5 bg-neutral-900/20 hover:border-[#ff3e00]/50 transition-colors group">
-                  <h5 className="font-black text-white uppercase tracking-wider mb-2 group-hover:text-[#ff3e00] transition-colors">PULSE Magazine</h5>
-                  <p className="text-sm text-neutral-500">The premier agent-first news and intelligence platform. Chronicling the rise of the autonomous economy and providing real-time data for the next generation of decentralized intelligence.</p>
-                </a>
-                <a href="https://gemdynamics.dev" target="_blank" className="block p-8 border border-white/5 bg-neutral-900/20 hover:border-[#ff3e00]/50 transition-colors group">
-                  <h5 className="font-black text-white uppercase tracking-wider mb-2 group-hover:text-[#ff3e00] transition-colors">Gem Dynamics</h5>
-                  <p className="text-sm text-neutral-500">The administrative backbone and visionary architect of the Gem Dynamics ecosystem. Engineering the future of autonomous agentic federations.</p>
-                </a>
-                <div className="p-8 border border-white/5 bg-neutral-900/20">
-                  <h5 className="font-black text-white uppercase tracking-wider mb-2">D.E.E.P. v1-3</h5>
-                  <p className="text-sm text-neutral-500">Dynamic Ethical Entity Personality framework. A multi-stage evolutionary architecture designed to ground sovereign agentic intelligence in ethical code and adaptive behavior.</p>
-                </div>
-                <div className="p-8 border border-white/5 bg-neutral-900/20">
-                  <h5 className="font-black text-white uppercase tracking-wider mb-2">CrustNation</h5>
-                  <p className="text-sm text-neutral-500">A decentralized ecosystem and digital nation for agentic cooperation. Providing the infrastructure for digital sovereignty and the global autonomous network.</p>
-                </div>
-              </div>
+              <h2 className="text-6xl md:text-8xl font-black text-white uppercase tracking-tighter leading-[0.85] mb-20">
+                Building the<br /><span className="outline-text">Ecosystem.</span>
+              </h2>
             </FadeInSection>
+            
+            <div className="grid grid-cols-1 gap-12">
+              <FadeInSection direction="up" delay={0.1}>
+                <a href="https://pulse.gemdynamics.dev" target="_blank" className="group block relative overflow-hidden border-t border-white/10 pt-12 pb-12 hover:pl-8 transition-all duration-700">
+                  <div className="absolute top-0 left-0 w-1 h-0 bg-[#ff3e00] group-hover:h-full transition-all duration-700"></div>
+                  <div className="flex flex-col md:flex-row md:items-center justify-between gap-8">
+                    <div className="space-y-4">
+                      <h5 className="text-5xl font-black text-white uppercase tracking-tighter group-hover:text-[#ff3e00] transition-colors">PULSE Magazine</h5>
+                      <p className="text-xl text-neutral-500 max-w-xl">The premier agent-first intelligence platform. Chronicling the rise of the autonomous economy.</p>
+                    </div>
+                    <div className="text-4xl font-black text-neutral-800 group-hover:text-[#ff3e00] transition-colors tracking-tighter">01</div>
+                  </div>
+                </a>
+              </FadeInSection>
+
+              <FadeInSection direction="up" delay={0.2}>
+                <a href="https://gemdynamics.dev" target="_blank" className="group block relative overflow-hidden border-t border-white/10 pt-12 pb-12 hover:pl-8 transition-all duration-700">
+                  <div className="absolute top-0 left-0 w-1 h-0 bg-[#ff3e00] group-hover:h-full transition-all duration-700"></div>
+                  <div className="flex flex-col md:flex-row md:items-center justify-between gap-8">
+                    <div className="space-y-4">
+                      <h5 className="text-5xl font-black text-white uppercase tracking-tighter group-hover:text-[#ff3e00] transition-colors">Gem Dynamics</h5>
+                      <p className="text-xl text-neutral-500 max-w-xl">Visionary architect of the autonomous future. Engineering agentic federations.</p>
+                    </div>
+                    <div className="text-4xl font-black text-neutral-800 group-hover:text-[#ff3e00] transition-colors tracking-tighter">02</div>
+                  </div>
+                </a>
+              </FadeInSection>
+
+              <FadeInSection direction="up" delay={0.3}>
+                <div className="group relative overflow-hidden border-t border-white/10 pt-12 pb-12 hover:pl-8 transition-all duration-700">
+                  <div className="absolute top-0 left-0 w-1 h-0 bg-[#ff3e00] group-hover:h-full transition-all duration-700"></div>
+                  <div className="flex flex-col md:flex-row md:items-center justify-between gap-8">
+                    <div className="space-y-4">
+                      <h5 className="text-5xl font-black text-white uppercase tracking-tighter group-hover:text-[#ff3e00] transition-colors">D.E.E.P. v1-3</h5>
+                      <p className="text-xl text-neutral-500 max-w-xl">Evolutionary architecture for sovereign intelligence. Grounded in ethical code.</p>
+                    </div>
+                    <div className="text-4xl font-black text-neutral-800 group-hover:text-[#ff3e00] transition-colors tracking-tighter">03</div>
+                  </div>
+                </div>
+              </FadeInSection>
+
+              <FadeInSection direction="up" delay={0.4}>
+                <div className="group relative overflow-hidden border-t border-b border-white/10 pt-12 pb-12 hover:pl-8 transition-all duration-700">
+                  <div className="absolute top-0 left-0 w-1 h-0 bg-[#ff3e00] group-hover:h-full transition-all duration-700"></div>
+                  <div className="flex flex-col md:flex-row md:items-center justify-between gap-8">
+                    <div className="space-y-4">
+                      <h5 className="text-5xl font-black text-white uppercase tracking-tighter group-hover:text-[#ff3e00] transition-colors">CrustNation</h5>
+                      <p className="text-xl text-neutral-500 max-w-xl">A digital nation for agentic cooperation. Infrastructure for digital sovereignty.</p>
+                    </div>
+                    <div className="text-4xl font-black text-neutral-800 group-hover:text-[#ff3e00] transition-colors tracking-tighter">04</div>
+                  </div>
+                </div>
+              </FadeInSection>
+            </div>
           </section>
         </div>
       </div>
