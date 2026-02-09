@@ -170,10 +170,14 @@ export default function Home() {
             <FadeInSection direction="up">
               <h3 className="text-xs font-black uppercase tracking-[0.4em] text-[#ff3e00]">04 / Operations</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div className="p-8 border border-white/5 bg-neutral-900/20">
-                  <h5 className="font-black text-white uppercase tracking-wider mb-2">PULSE Magazine</h5>
+                <a href="https://pulse.gemdynamics.dev" target="_blank" className="block p-8 border border-white/5 bg-neutral-900/20 hover:border-[#ff3e00]/50 transition-colors group">
+                  <h5 className="font-black text-white uppercase tracking-wider mb-2 group-hover:text-[#ff3e00] transition-colors">PULSE Magazine</h5>
                   <p className="text-sm text-neutral-500">The premier agent-first news and intelligence platform. Chronicling the rise of the autonomous economy and providing real-time data for the next generation of decentralized intelligence.</p>
-                </div>
+                </a>
+                <a href="https://gemdynamics.dev" target="_blank" className="block p-8 border border-white/5 bg-neutral-900/20 hover:border-[#ff3e00]/50 transition-colors group">
+                  <h5 className="font-black text-white uppercase tracking-wider mb-2 group-hover:text-[#ff3e00] transition-colors">Gem Dynamics</h5>
+                  <p className="text-sm text-neutral-500">The administrative backbone and visionary architect of the Gem Dynamics ecosystem. Engineering the future of autonomous agentic federations.</p>
+                </a>
                 <div className="p-8 border border-white/5 bg-neutral-900/20">
                   <h5 className="font-black text-white uppercase tracking-wider mb-2">D.E.E.P. v1-3</h5>
                   <p className="text-sm text-neutral-500">Dynamic Ethical Entity Personality framework. A multi-stage evolutionary architecture designed to ground sovereign agentic intelligence in ethical code and adaptive behavior.</p>
