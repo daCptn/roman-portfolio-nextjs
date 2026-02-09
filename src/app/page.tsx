@@ -153,15 +153,18 @@ export default function Home() {
           <section className="space-y-8">
             <FadeInSection direction="up">
               <h3 className="text-xs font-black uppercase tracking-[0.4em] text-[#ff3e00]">03 / Achievements</h3>
-              <div className="bg-[#0a0a0a] border border-white/5 p-12 space-y-6 hover:border-[#ff3e00]/30 transition-colors duration-500">
+              <a href="https://apexanalytics.gemdynamics.dev" target="_blank" className="block bg-[#0a0a0a] border border-white/5 p-12 space-y-6 hover:border-[#ff3e00]/30 transition-colors duration-500 group">
                 <div className="flex items-center gap-3 text-[#ff3e00]">
                   <span className="text-sm font-black uppercase tracking-widest">🏆 Winner: KI Con Hackathon Vienna</span>
                 </div>
-                <h4 className="text-4xl font-black text-white uppercase tracking-tighter">ApexAnalytics</h4>
+                <h4 className="text-4xl font-black text-white uppercase tracking-tighter group-hover:text-[#ff3e00] transition-colors">ApexAnalytics</h4>
                 <p className="text-neutral-400 leading-relaxed">
                   An agentic platform for automated construction contract analysis. Utilizing a traffic-light risk rating system and smart clause editing to transform legal complexity into actionable intelligence.
                 </p>
-              </div>
+                <div className="text-[#ff3e00] text-sm font-bold tracking-widest uppercase flex items-center gap-2">
+                  View Demo Site <span className="group-hover:translate-x-2 transition-transform">→</span>
+                </div>
+              </a>
             </FadeInSection>
           </section>
 
