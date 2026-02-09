@@ -26,6 +26,7 @@ export default function Home() {
 
   const isActive = isScrolled || isHovered;
 
+  // Deployment Trigger: 2026-02-09
   return (
     <main className="relative min-h-screen" ref={containerRef}>
       {/* Background Glow */}
