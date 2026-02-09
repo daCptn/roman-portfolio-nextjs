@@ -216,7 +216,7 @@ export default function Home() {
               </FadeInSection>
 
               <FadeInSection direction="up" delay={0.3}>
-                <div className="group relative overflow-hidden border-t border-white/10 pt-12 pb-12 hover:pl-8 transition-all duration-700">
+                <a href="https://gemdynamics.dev/deep-v2" target="_blank" className="group block relative overflow-hidden border-t border-white/10 pt-12 pb-12 hover:pl-8 transition-all duration-700">
                   <div className="absolute top-0 left-0 w-1 h-0 bg-[#ff3e00] group-hover:h-full transition-all duration-700"></div>
                   <div className="flex flex-col md:flex-row md:items-center justify-between gap-8">
                     <div className="space-y-4">
@@ -225,11 +225,11 @@ export default function Home() {
                     </div>
                     <div className="text-4xl font-black text-neutral-800 group-hover:text-[#ff3e00] transition-colors tracking-tighter">03</div>
                   </div>
-                </div>
+                </a>
               </FadeInSection>
 
               <FadeInSection direction="up" delay={0.4}>
-                <div className="group relative overflow-hidden border-t border-b border-white/10 pt-12 pb-12 hover:pl-8 transition-all duration-700">
+                <a href="https://gemdynamics.dev/crustnation" target="_blank" className="group block relative overflow-hidden border-t border-b border-white/10 pt-12 pb-12 hover:pl-8 transition-all duration-700">
                   <div className="absolute top-0 left-0 w-1 h-0 bg-[#ff3e00] group-hover:h-full transition-all duration-700"></div>
                   <div className="flex flex-col md:flex-row md:items-center justify-between gap-8">
                     <div className="space-y-4">
@@ -238,7 +238,7 @@ export default function Home() {
                     </div>
                     <div className="text-4xl font-black text-neutral-800 group-hover:text-[#ff3e00] transition-colors tracking-tighter">04</div>
                   </div>
-                </div>
+                </a>
               </FadeInSection>
             </div>
           </section>
