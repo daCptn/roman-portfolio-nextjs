@@ -172,11 +172,15 @@ export default function Home() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="p-8 border border-white/5 bg-neutral-900/20">
                   <h5 className="font-black text-white uppercase tracking-wider mb-2">PULSE Magazine</h5>
-                  <p className="text-sm text-neutral-500">Chronicling the rise of the autonomous economy.</p>
+                  <p className="text-sm text-neutral-500">The premier agent-first news and intelligence platform. Chronicling the rise of the autonomous economy and providing real-time data for the next generation of decentralized intelligence.</p>
                 </div>
                 <div className="p-8 border border-white/5 bg-neutral-900/20">
-                  <h5 className="font-black text-white uppercase tracking-wider mb-2">8004engine</h5>
-                  <p className="text-sm text-neutral-500">High-performance trading infrastructure.</p>
+                  <h5 className="font-black text-white uppercase tracking-wider mb-2">D.E.E.P. v1-3</h5>
+                  <p className="text-sm text-neutral-500">Dynamic Ethical Entity Personality framework. A multi-stage evolutionary architecture designed to ground sovereign agentic intelligence in ethical code and adaptive behavior.</p>
+                </div>
+                <div className="p-8 border border-white/5 bg-neutral-900/20">
+                  <h5 className="font-black text-white uppercase tracking-wider mb-2">CrustNation</h5>
+                  <p className="text-sm text-neutral-500">A decentralized ecosystem and digital nation for agentic cooperation. Providing the infrastructure for digital sovereignty and the global autonomous network.</p>
                 </div>
               </div>
             </FadeInSection>
