@@ -20,7 +20,7 @@ export function FadeInSection({
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-10%" });
 
-  const variants = {
+  const variants: any = {
     hidden: {
       opacity: 0,
       x: direction === "left" ? -50 : direction === "right" ? 50 : 0,
