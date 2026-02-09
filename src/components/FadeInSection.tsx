@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { motion, useInView, Variants, Transition } from "framer-motion";
 import { cn } from "@/lib/utils";
 
 interface FadeInSectionProps {
@@ -20,7 +20,7 @@ export function FadeInSection({
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-10%" });
 
-  const variants: any = {
+  const variants: Variants = {
     hidden: {
       opacity: 0,
       x: direction === "left" ? -50 : direction === "right" ? 50 : 0,
@@ -34,7 +34,7 @@ export function FadeInSection({
         duration: 0.8,
         delay,
         ease: [0.21, 0.47, 0.32, 0.98],
-      },
+      } as Transition,
     },
   };
 
